@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="com.cits.regression.AddRVM_TS_01"/>
+      <class name="com.cits.regression.AddAdmin_TS_02"/>
+      <class name="com.cits.regression.AddSuper_TS_03"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

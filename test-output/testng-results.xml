@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57483" started-at="2016-07-22T10:34:52Z" finished-at="2016-07-22T10:35:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57483" started-at="2016-07-22T10:34:52Z" finished-at="2016-07-22T10:35:50Z">
+      <class name="com.cits.regression.UserListButton_TS_05">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.cits.regression.UserListButton_TS_05@6e9ef1ce]" name="preCondition" is-config="true" duration-ms="6431" started-at="2016-07-22T16:04:52Z" finished-at="2016-07-22T16:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyUserListBtn_TC_05()[pri:0, instance:com.cits.regression.UserListButton_TS_05@6e9ef1ce]" name="verifyUserListBtn_TC_05" duration-ms="50170" started-at="2016-07-22T16:04:59Z" finished-at="2016-07-22T16:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserListBtn_TC_05 -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.cits.regression.UserListButton_TS_05@6e9ef1ce]" name="postCondition" is-config="true" duration-ms="847" started-at="2016-07-22T16:05:49Z" finished-at="2016-07-22T16:05:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserListBtn_TC_05 status=SUCCESS method=UserListButton_TS_05.verifyUserListBtn_TC_05()[pri:0, instance:com.cits.regression.UserListButton_TS_05@6e9ef1ce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.cits.regression.UserListButton_TS_05 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="com.cits.regression.AddSuper_TS_03">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="verifyAddSuper_TC_03"/>
+        </methods>
+      </class> <!-- com.cits.regression.AddSuper_TS_03 -->
+      <class name="com.cits.regression.AddAdmin_TS_02">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.cits.regression.AddAdmin_TS_02 -->
+      <class name="com.cits.regression.AddRVM_TS_01">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.cits.regression.AddRVM_TS_01 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,158 @@
+2016-08-09 16:17:42,997 [main] INFO Configuration Class - Browser maximize
+2016-08-09 16:17:43,047 [main] INFO Configuration Class - putting timeout
+2016-08-09 16:17:45,388 [main] INFO Configuration Class - app launching
+2016-08-09 16:18:09,995 [main] INFO Configuration Class - Browser closed
+2016-08-09 16:40:19,419 [main] INFO Configuration Class - Browser maximize
+2016-08-09 16:40:19,456 [main] INFO Configuration Class - putting timeout
+2016-08-09 16:40:20,985 [main] INFO Configuration Class - Application is Launching
+2016-08-09 16:40:21,122 [main] INFO Configuration Class - Login Page is Open
+2016-08-09 16:40:22,084 [main] INFO Configuration Class - Enter the username and password and Login Successfully
+2016-08-09 16:40:45,046 [main] INFO Configuration Class - Browser maximize
+2016-08-09 16:40:45,067 [main] INFO Configuration Class - putting timeout
+2016-08-09 16:40:46,221 [main] INFO Configuration Class - Application is Launching
+2016-08-09 16:40:46,379 [main] INFO Configuration Class - Login Page is Open
+2016-08-09 16:40:47,712 [main] INFO Configuration Class - Enter the username and password and Login Successfully
+2016-08-09 16:40:50,338 [main] INFO Configuration Class - click on Affilite 
+2016-08-09 16:40:50,485 [main] INFO Configuration Class - search by Sales Id
+2016-08-09 16:40:51,398 [main] INFO Configuration Class - click on RelationShip tab 
+2016-08-09 16:41:01,799 [main] INFO Configuration Class - Browser closed
+2016-08-09 16:54:34,312 [main] INFO Configuration Class - Browser maximize
+2016-08-09 16:54:34,339 [main] INFO Configuration Class - putting timeout
+2016-08-09 16:54:35,504 [main] INFO Configuration Class - Application is Launching
+2016-08-09 16:54:35,647 [main] INFO Configuration Class - Login Page is Open
+2016-08-09 16:54:36,973 [main] INFO Configuration Class - Enter the username and password and Login Successfully
+2016-08-09 16:54:39,629 [main] INFO Configuration Class - click on Affilite 
+2016-08-09 16:54:39,774 [main] INFO Configuration Class - search by Sales Id
+2016-08-09 16:54:40,904 [main] INFO Configuration Class - click on customer
+2016-08-09 16:54:44,896 [main] INFO Configuration Class - click on superAssignDateImg
+2016-08-09 16:54:44,899 [main] INFO Configuration Class - select the assign Date and click ok
+2016-08-09 16:54:46,583 [main] INFO Configuration Class - handle the alert
+2016-08-09 16:54:49,465 [main] INFO Configuration Class - agin click on superAssignDateImg
+2016-08-09 16:54:49,468 [main] INFO Configuration Class - select the date and click on ok
+2016-08-09 16:54:49,471 [main] INFO Configuration Class - closed the Browser
+2016-08-09 17:10:47,263 [main] INFO Configuration Class - Browser maximize
+2016-08-09 17:10:47,288 [main] INFO Configuration Class - putting timeout
+2016-08-09 17:10:48,429 [main] INFO Configuration Class - Application is Launching
+2016-08-09 17:10:48,697 [main] INFO ABMLINKClearBtn  Class - Enter username
+2016-08-09 17:10:48,740 [main] INFO ABMLINKClearBtn  Class - Enter password
+2016-08-09 17:10:49,641 [main] INFO ABMLINKClearBtn  Class - Login Successfully
+2016-08-09 17:10:52,270 [main] INFO ABMLINKClearBtn  Class - click on ABMLink
+2016-08-09 17:10:52,353 [main] INFO ABMLINKClearBtn  Class - Enter  Sales Id
+2016-08-09 17:10:52,441 [main] INFO ABMLINKClearBtn  Class - Enter LastName
+2016-08-09 17:10:52,522 [main] INFO ABMLINKClearBtn  Class - Enter FirstName
+2016-08-09 17:10:52,673 [main] INFO ABMLINKClearBtn  Class - Enter empid
+2016-08-09 17:10:52,760 [main] INFO ABMLINKClearBtn  Class - Entercompany Name
+2016-08-09 17:10:52,844 [main] INFO ABMLINKClearBtn  Class - Enter cuid
+2016-08-09 17:10:52,925 [main] INFO ABMLINKClearBtn  Class - Enter Alternate SalesCode
+2016-08-09 17:10:53,001 [main] INFO ABMLINKClearBtn  Class - Enter dealer code
+2016-08-09 17:10:53,080 [main] INFO ABMLINKClearBtn  Class - Enter sapid
+2016-08-09 17:10:53,161 [main] INFO ABMLINKClearBtn  Class - click on clear Button
+2016-08-09 19:11:15,619 [main] INFO Configuration Class - Browser maximize
+2016-08-09 19:11:15,678 [main] INFO Configuration Class - putting timeout
+2016-08-09 19:11:17,542 [main] INFO Configuration Class - Application is Launching
+2016-08-09 19:11:17,761 [main] INFO ABMLINKClearBtn  Class - Enter username
+2016-08-09 19:11:17,816 [main] INFO ABMLINKClearBtn  Class - Enter password
+2016-08-09 19:11:18,744 [main] INFO ABMLINKClearBtn  Class - Login Successfully
+2016-08-09 19:11:21,329 [main] INFO ABMLINKClearBtn  Class - click on ABMLink
+2016-08-09 19:11:22,543 [main] INFO ABMLINKClearBtn  Class - click on Title Tab
+2016-08-09 19:11:26,700 [main] INFO ABMLINKClearBtn  Class - click on Link
+2016-08-11 16:56:30,614 [main] INFO Configuration Class - Browser Open
+2016-08-11 16:56:30,704 [main] INFO Configuration Class - Browser maximize
+2016-08-11 16:56:30,721 [main] INFO Configuration Class - putting implicit wait
+2016-08-11 16:56:32,059 [main] INFO Configuration Class - Application is Launching
+2016-08-11 16:56:32,272 [main] INFO AffiliateLink  Class - Enter username
+2016-08-11 16:56:32,315 [main] INFO AffiliateLink  Class - Enter password
+2016-08-11 16:56:33,192 [main] INFO AffiliateLink  Class - Login Successfully
+2016-08-11 16:56:34,676 [main] INFO AffiliateLink  Class - Logout Successfully
+2016-08-12 10:48:36,171 [main] INFO Configuration Class - Browser Open
+2016-08-12 10:48:36,258 [main] INFO Configuration Class - Browser maximize
+2016-08-12 10:48:36,273 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 10:48:37,937 [main] INFO Configuration Class - Application is Launching
+2016-08-12 10:48:38,156 [main] INFO MapDetailTitle  Class - Enter username
+2016-08-12 10:48:38,198 [main] INFO MapDetailTitle  Class - Enter password
+2016-08-12 10:48:39,181 [main] INFO MapDetailTitle  Class - Login Successfully
+2016-08-12 10:48:42,108 [main] INFO MapDetailTitle  Class - click on Affilite Tab
+2016-08-12 10:48:43,291 [main] INFO MapDetailTitle  Class - Click on Utitlity Tab
+2016-08-12 10:48:46,725 [main] INFO MapDetailTitle  Class - Click on MapHierTitle Tab
+2016-08-12 10:48:46,920 [main] INFO MapDetailTitle  Class - Select Sales Hierarchy Name
+2016-08-12 10:48:47,364 [main] INFO MapDetailTitle  Class - Select HierarchyItems 
+2016-08-12 10:48:48,144 [main] INFO MapDetailTitle  Class - Click on Add Button
+2016-08-12 10:48:48,147 [main] INFO MapDetailTitle  Class - select Detailed Title
+2016-08-12 10:48:52,053 [main] INFO MapDetailTitle  Class - Enter Start Date
+2016-08-12 10:48:55,395 [main] INFO MapDetailTitle  Class - Enter End Date
+2016-08-12 10:48:56,408 [main] INFO MapDetailTitle  Class - Click on Save Button
+2016-08-12 11:11:13,841 [main] INFO Configuration Class - Browser Open
+2016-08-12 11:11:13,881 [main] INFO Configuration Class - Browser maximize
+2016-08-12 11:11:13,898 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 11:11:15,030 [main] INFO Configuration Class - Application is Launching
+2016-08-12 11:11:15,196 [main] INFO NewHierarchyVerify - Enter username
+2016-08-12 11:11:15,243 [main] INFO NewHierarchyVerify - Enter password
+2016-08-12 11:11:16,093 [main] INFO NewHierarchyVerify - Login Successfully
+2016-08-12 11:11:18,044 [main] INFO NewHierarchyVerify - Click on NewHierarchyTab
+2016-08-12 11:11:18,723 [main] INFO NewHierarchyVerify - Enter NewHierarchy Information
+2016-08-12 11:25:27,934 [main] INFO Configuration Class - Browser Open
+2016-08-12 11:25:27,987 [main] INFO Configuration Class - Browser maximize
+2016-08-12 11:25:28,001 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 11:25:29,916 [main] INFO Configuration Class - Application is Launching
+2016-08-12 11:25:30,077 [main] INFO  ResetAgent - Enter username
+2016-08-12 11:25:30,119 [main] INFO  ResetAgent - Enter password
+2016-08-12 11:25:30,997 [main] INFO  ResetAgent - Login Successfully
+2016-08-12 11:25:33,574 [main] INFO  ResetAgent - click on Affilite Tab
+2016-08-12 11:25:34,761 [main] INFO  ResetAgent - Click on Utitlity Tab
+2016-08-12 11:25:34,877 [main] INFO  ResetAgent - Click on ResetAgentTab
+2016-08-12 11:25:39,380 [main] INFO  ResetAgent - Reset Agent By FirstName
+2016-08-12 11:25:45,741 [main] INFO Configuration Class - Browser Open
+2016-08-12 11:25:45,795 [main] INFO Configuration Class - Browser maximize
+2016-08-12 11:25:45,811 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 11:25:47,172 [main] INFO Configuration Class - Application is Launching
+2016-08-12 11:25:47,261 [main] INFO  ResetAgent - Enter username
+2016-08-12 11:25:47,295 [main] INFO  ResetAgent - Enter password
+2016-08-12 11:25:48,111 [main] INFO  ResetAgent - Login Successfully
+2016-08-12 11:25:50,654 [main] INFO  ResetAgent - click on Affilite Tab
+2016-08-12 11:25:51,803 [main] INFO  ResetAgent - Click on Utitlity Tab
+2016-08-12 11:25:51,908 [main] INFO  ResetAgent - Click on ResetAgentTab
+2016-08-12 11:25:55,146 [main] INFO  ResetAgent - Reset Agent By LastName
+2016-08-12 11:26:03,767 [main] INFO Configuration Class - Browser Open
+2016-08-12 11:26:03,817 [main] INFO Configuration Class - Browser maximize
+2016-08-12 11:26:03,835 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 11:26:05,156 [main] INFO Configuration Class - Application is Launching
+2016-08-12 11:26:05,251 [main] INFO  ResetAgent - Enter username
+2016-08-12 11:26:05,289 [main] INFO  ResetAgent - Enter password
+2016-08-12 11:26:06,084 [main] INFO  ResetAgent - Login Successfully
+2016-08-12 11:26:08,870 [main] INFO  ResetAgent - click on Affilite Tab
+2016-08-12 11:26:10,329 [main] INFO  ResetAgent - Click on Utitlity Tab
+2016-08-12 11:26:10,470 [main] INFO  ResetAgent - Click on ResetAgentTab
+2016-08-12 11:26:11,346 [main] INFO  ResetAgent - Enter Sales Id and Reset
+2016-08-12 11:26:11,854 [main] INFO  ResetAgent - Handle Alert Pop-ups
+2016-08-12 12:38:43,509 [main] INFO Configuration Class - Browser Open
+2016-08-12 12:38:43,620 [main] INFO Configuration Class - Browser maximize
+2016-08-12 12:38:43,649 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 12:38:45,438 [main] INFO Configuration Class - Application is Launching
+2016-08-12 12:38:45,686 [main] INFO MapDetailTitle  Class - Enter username
+2016-08-12 12:38:45,732 [main] INFO MapDetailTitle  Class - Enter password
+2016-08-12 12:38:47,106 [main] INFO MapDetailTitle  Class - Login Successfully
+2016-08-12 12:38:49,761 [main] INFO MapDetailTitle  Class - click on Affilite Tab
+2016-08-12 12:38:51,036 [main] INFO MapDetailTitle  Class - Click on Utitlity Tab
+2016-08-12 12:38:54,522 [main] INFO MapDetailTitle  Class - Click on MapHierTitle Tab
+2016-08-12 12:38:54,821 [main] INFO MapDetailTitle  Class - Select Sales Hierarchy Name
+2016-08-12 12:38:55,315 [main] INFO MapDetailTitle  Class - Select HierarchyItems 
+2016-08-12 12:38:55,934 [main] INFO MapDetailTitle  Class - Click on Add Button
+2016-08-12 12:38:55,938 [main] INFO MapDetailTitle  Class - select Detailed Title
+2016-08-12 12:39:30,427 [main] INFO Configuration Class - Browser Open
+2016-08-12 12:39:30,475 [main] INFO Configuration Class - Browser maximize
+2016-08-12 12:39:30,497 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 12:39:31,662 [main] INFO Configuration Class - Application is Launching
+2016-08-12 12:39:31,897 [main] INFO NewHierarchyVerify - Enter username
+2016-08-12 12:39:31,959 [main] INFO NewHierarchyVerify - Enter password
+2016-08-12 12:39:32,831 [main] INFO NewHierarchyVerify - Login Successfully
+2016-08-12 12:39:34,614 [main] INFO NewHierarchyVerify - Click on NewHierarchyTab
+2016-08-12 12:39:35,313 [main] INFO NewHierarchyVerify - Enter NewHierarchy Information
+2016-08-12 12:39:35,575 [main] INFO NewHierarchyVerify - Handle Alert Pop-Ups
+2016-08-12 12:39:36,028 [main] INFO NewHierarchyVerify - Logout Successfully
+2016-08-12 12:39:57,421 [main] INFO Configuration Class - Browser Open
+2016-08-12 12:39:57,479 [main] INFO Configuration Class - Browser maximize
+2016-08-12 12:39:57,499 [main] INFO Configuration Class - putting implicit wait
+2016-08-12 12:39:58,831 [main] INFO Configuration Class - Application is Launching
+2016-08-12 12:39:59,067 [main] INFO ABMLINKClearBtn  Class - Enter username
+2016-08-12 12:39:59,115 [main] INFO ABMLINKClearBtn  Class - Enter password
+2016-08-12 12:40:00,109 [main] INFO ABMLINKClearBtn  Class - Login Successfully

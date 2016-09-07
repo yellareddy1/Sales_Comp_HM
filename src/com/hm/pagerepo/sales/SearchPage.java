@@ -5,6 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class SearchPage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[@href='/ccshms/hmsessionparamservlet?Role_HierId=ADMIN_2078_ABM']")
@@ -37,6 +41,9 @@ public class SearchPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for Clicking on ABM
+	 */
 	public void clickonABMLink() {
 		abmLink.click();
 		driver.switchTo().frame("Menu");
@@ -44,52 +51,106 @@ public class SearchPage {
 		driver.switchTo().frame("agent_main");
 	}
 
+	/**
+	 * Method for entering Sales id under ABM
+	 * 
+	 * @param sid
+	 */
 	public void enterSalesId(String sid) {
 
 		salesIdTxtBx.sendKeys(sid);
 	}
 
+	/**
+	 * Method for Enter last Name of Agent
+	 * 
+	 * @param lname
+	 */
 	public void enterLastName(String lname) {
 		lastNameTxtBx.sendKeys(lname);
 	}
 
+	/**
+	 * Method for Entering First Name of Agent
+	 * 
+	 * @param fname
+	 */
 	public void enterFirstName(String fname) {
 		firstNameTxtBx.sendKeys(fname);
 	}
 
+	/**
+	 * Enter EMP id
+	 * 
+	 * @param eid
+	 */
 	public void enterempid(String eid) {
 		empidTxtBx.sendKeys(eid);
 	}
 
+	/**
+	 * Enter Company
+	 * 
+	 * @param cname
+	 */
 	public void entercompanyname(String cname) {
 		compNameTxtBx.sendKeys(cname);
 	}
 
+	/**
+	 * Enter Cuid
+	 * 
+	 * @param cuid
+	 */
 	public void entercuid(String cuid) {
 		cuidTxtBx.sendKeys(cuid);
 	}
 
+	/**
+	 * Enter Sap id
+	 * 
+	 * @param sid
+	 */
 	public void entersapid(String sid) {
 		sapidTxtBx.sendKeys(sid);
 	}
 
+	/**
+	 * Enter Deal code
+	 * 
+	 * @param dcode
+	 */
 	public void enterdealercode(String dcode) {
 		dealerCodeTxtBx.sendKeys(dcode);
 
 	}
 
+	/**
+	 * enter internal sale id
+	 * 
+	 * @param ascode
+	 */
 	public void enteraltsalescode(String ascode) {
 		altSalesCodeTxtBx.sendKeys(ascode);
 	}
 
+	/**
+	 * click on search Button
+	 */
 	public void clickonsearch() {
 		searchBtn.click();
 	}
 
+	/**
+	 * click on clear button
+	 */
 	public void clickonclear() {
 		clearBtn.click();
 	}
 
+	/**
+	 * click on only ABMlink
+	 */
 	public void clickonsimpleABMlink() {
 		abmLink.click();
 	}

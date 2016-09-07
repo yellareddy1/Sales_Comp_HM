@@ -8,40 +8,38 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import sun.org.mozilla.javascript.internal.JavaScriptException;
-
 public class AddIntenalAgentPage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[@href='/ccshms/hmsessionparamservlet?Role_HierId=ADMIN_1044_NBA - GENERAL (CUSTOMER CARE)']")
-	WebElement link;
+	private WebElement link;
 	@FindBy(xpath = "//a[@href='/ccshms/HMaddqwestagentservlet']")
-	WebElement addInternalSalesPersonTab;
+	private WebElement addInternalSalesPersonTab;
 	@FindBy(name = "cuId")
-	WebElement cuidTxtBox;
+	private WebElement cuidTxtBox;
 	@FindBy(xpath = "//a[img[@src='/ccshms/images/MNet.gif']]")
-	WebElement mNetImg;
+	private WebElement mNetImg;
 	@FindBy(css = "input[value*='Ok']")
-	WebElement newAgentOkBtn;
+	private WebElement newAgentOkBtn;
 	@FindBy(xpath = "//a[img[@alt='Sales Area Search']]")
-	WebElement salesAreaSearchimg;
+	private WebElement salesAreaSearchimg;
 	@FindBy(xpath = "//td[a[contains(text(),'Nba External - Telemarketing')]]/following::a[1]")
-	WebElement agentRegion;
+	private WebElement agentRegion;
 	@FindBy(xpath = "//td[input[@value='Select']]")
-	WebElement agentRegionOkBtn;
+	private WebElement agentRegionOkBtn;
 	@FindBy(xpath = "//a[img[@alt='Agent Title Search']]")
-	WebElement titleSearchImg;
+	private WebElement titleSearchImg;
 	@FindBy(xpath = "//a[contains(text(),'Telemarketing Vp')]")
-	WebElement agentRole;
+	private WebElement agentRole;
 	@FindBy(xpath = "//a[img[@alt='Superior Search']]")
-	WebElement superiorSearchImg;
+	private WebElement superiorSearchImg;
 	@FindBy(name = "firstname")
-	WebElement firstNameTxtBx;
+	private WebElement firstNameTxtBx;
 	@FindBy(name = "Submit")
-	WebElement submitbtn;
+	private WebElement submitbtn;
 	@FindBy(xpath = "html/body/table/tbody/tr/td/table/tbody/tr/td[4]/table/tbody/tr[3]/td/table/tbody/tr/td[1]/a")
-	WebElement selectSuperior;
+	private WebElement selectSuperior;
 	@FindBy(xpath = "//input[@value='Save']")
-	WebElement saveBtn;
+	private WebElement saveBtn;
 
 	public AddIntenalAgentPage(WebDriver driver) {
 		this.driver = driver;
@@ -49,6 +47,9 @@ public class AddIntenalAgentPage {
 
 	}
 
+	/**
+	 * This method is used to click on Add Internal Sales Person Tab
+	 */
 	public void clickonAddInternalSalesPerson() {
 		link.click();
 		driver.switchTo().frame("Menu");
@@ -56,6 +57,11 @@ public class AddIntenalAgentPage {
 		driver.switchTo().defaultContent();
 	}
 
+	/**
+	 * This is used Search MNet and Select the Agent
+	 * @param cuid
+	 * @throws InterruptedException
+	 */
 	public void searchMNet(String cuid) throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("agent_main");
@@ -70,6 +76,10 @@ public class AddIntenalAgentPage {
 
 	}
 
+	/**
+	 * used for Search Agent Region and Select the Region
+	 * @throws InterruptedException
+	 */
 	public void searchAgentRegion() throws InterruptedException {
 		driver.switchTo().frame("agent_main");
 		salesAreaSearchimg.click();
@@ -88,6 +98,10 @@ public class AddIntenalAgentPage {
 
 	}
 
+	/**
+	 * used for Search Agent Role and Select the Role
+	 * @throws InterruptedException
+	 */
 	public void searchAgentRole() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("agent_main");
@@ -106,6 +120,11 @@ public class AddIntenalAgentPage {
 
 	}
 
+	/**
+	 * used for Select Superior 
+	 * @param fName
+	 * @throws InterruptedException
+	 */
 	public void searchSuperior(String fName) throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("agent_main");
@@ -119,12 +138,20 @@ public class AddIntenalAgentPage {
 
 	}
 
+	/**
+	 * used for save the created Agent
+	 */
 	public void createIntenalAgent() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("agent_main");
 		saveBtn.click();
+		driver.switchTo().defaultContent();
 	}
 
+	/**
+	 * This method used for Switching Between Windows
+	 * @param index
+	 */
 	private void switchToWindowByIndex(int index) {
 		int count = 0;
 		Set<String> windows = driver.getWindowHandles();

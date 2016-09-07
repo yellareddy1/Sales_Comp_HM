@@ -16,7 +16,6 @@ public class AddInternalAgent_TS_16 extends TestConfigu{
 	{
 		PropertyConfigurator.configure("log4j.properties");
 		LoginPage lp = new LoginPage( driver);
-		logger.info("Add Regio TC_16 Started");
 		String un = GenericUtils.getData("./Test data/data.xlsx", "Sheet2", 1, 0);
 		logger.info("Enter username");
 		String pass = GenericUtils.getData("./Test data/data.xlsx", "Sheet2", 1, 1);
@@ -39,6 +38,7 @@ public class AddInternalAgent_TS_16 extends TestConfigu{
 		internalAgent.createIntenalAgent();
 		logger.info("Add New Internal Agent");
 		GenericUtils.acceptAlert(driver);
+		
 	}
 
 }

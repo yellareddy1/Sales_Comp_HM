@@ -7,11 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class AddParentTitlePage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[@href='/ccshms/HMsalesaddnewitemforwardservlet?addFlag=Parent']")
 	private WebElement addparenttitletab;
-	@FindBy(xpath="(//tr[td[a[contains(text(),'272 CONSUMER INBOUND')]]]/td)[1]")
+	@FindBy(xpath = "(//tr[td[a[contains(text(),'272 CONSUMER INBOUND')]]]/td)[1]")
 	private WebElement customerLink;
 	@FindBy(name = "type")
 	private WebElement statementType;
@@ -25,6 +29,11 @@ public class AddParentTitlePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Used for Clicking on AddParent Title
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickOnAddparentTitle() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("sales");
@@ -36,6 +45,11 @@ public class AddParentTitlePage {
 
 	}
 
+	/**
+	 * Method to Click on Agent Link
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickOncoustmerLink() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("menu");
@@ -43,6 +57,9 @@ public class AddParentTitlePage {
 		Thread.sleep(3000);
 	}
 
+	/**
+	 * Method for selecting Statement type
+	 */
 	public void selectStatementType() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("text");
@@ -50,6 +67,9 @@ public class AddParentTitlePage {
 		GenericUtils.selectDdlByVisibleText(statementType, "Rmg_Sales_Rep");
 	}
 
+	/**
+	 * Method for clicking on Save Button
+	 */
 	public void clickOnSave() {
 		saveBtn.click();
 	}

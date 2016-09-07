@@ -9,6 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class SuperAssignDateChangePage {
 	WebDriver driver;
 	@FindBy(xpath = "(//img[@src='/ccshms/images/show-calendar.gif'])[2]")
@@ -25,6 +29,11 @@ public class SuperAssignDateChangePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for selecting superior assign date
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void selectsuperAssDate1() throws InterruptedException {
 		superAssignDateImg.click();
 		switchToWindowByIndex(1);
@@ -32,11 +41,16 @@ public class SuperAssignDateChangePage {
 		okBtn.click();
 		switchToWindowByIndex(0);
 		Thread.sleep(2000);
-        driver.switchTo().frame("agent_main");
+		driver.switchTo().frame("agent_main");
 		saveBtn.click();
 
 	}
 
+	/**
+	 * Method for slecting superior assign date for Different Superior
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void selectsuperAssDate2() throws InterruptedException {
 
 		superAssignDateImg.click();
@@ -45,11 +59,16 @@ public class SuperAssignDateChangePage {
 		okBtn.click();
 		switchToWindowByIndex(0);
 		Thread.sleep(2000);
-        driver.switchTo().frame("agent_main");
+		driver.switchTo().frame("agent_main");
 		saveBtn.click();
 
 	}
 
+	/**
+	 * Method for switching between window
+	 * 
+	 * @param index
+	 */
 	private void switchToWindowByIndex(int index) {
 		int count = 0;
 		Set<String> windows = driver.getWindowHandles();

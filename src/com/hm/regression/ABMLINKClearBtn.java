@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class ABMLINKClearBtn extends TestConfigu {
 	Logger logger = Logger.getLogger("ABMLINKClearBtn  Class");
 	@Test
-	public void clearBtn() {
+	public void clearBtn() throws InterruptedException {
 		PropertyConfigurator.configure("log4j.properties");
 		LoginPage lp = new LoginPage(driver);
 		String un = GenericUtils.getData("./Test data/data.xlsx", "Sheet2", 1, 0);

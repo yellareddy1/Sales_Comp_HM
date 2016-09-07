@@ -1,8 +1,8 @@
 package com.hm.regression;
 
+import org.testng.annotations.Test;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.annotations.Test;
 import com.hm.generic.GenericUtils;
 import com.hm.pagerepo.LoginPage;
 import com.hm.pagerepo.home.AffiliteLinkPage;

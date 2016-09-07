@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class ResetAgentTabPage {
 	WebDriver driver;
 	@FindBy(xpath = "//img[@alt='Reset Agent']")
@@ -29,12 +33,20 @@ public class ResetAgentTabPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Click on Reset Agent Tab
+	 */
 	public void clickOnResetAgentTab() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("menu");
 		resetAgentTab.click();
 	}
 
+	/**
+	 * Search by sales Id
+	 * 
+	 * @param sId
+	 */
 	public void enterSalesIdandReset(String sId) {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");
@@ -44,6 +56,12 @@ public class ResetAgentTabPage {
 
 	}
 
+	/**
+	 * Search by Name
+	 * 
+	 * @param fName
+	 * @throws InterruptedException
+	 */
 	public void resetByFirstByName(String fName) throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");
@@ -59,6 +77,12 @@ public class ResetAgentTabPage {
 
 	}
 
+	/**
+	 * Search by Last Name
+	 * 
+	 * @param lName
+	 * @throws InterruptedException
+	 */
 	public void resetByLastName(String lName) throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");

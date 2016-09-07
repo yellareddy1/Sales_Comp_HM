@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class ContactandPaymentInfoTabPage {
 	WebDriver driver;
 	@FindBy(xpath = "html/body/table/tbody/tr/td/table/tbody/tr/td[3]/table/tbody/tr[5]/td/table/tbody/tr[1]/td[1]/a/font/b")
@@ -69,25 +73,48 @@ public class ContactandPaymentInfoTabPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on Sales Person Name
+	 */
 	public void ClickOnSalePersonName() {
 
 		salesPersonName.click();
 
 	}
 
+	/**
+	 * used for Clicking on Contact Tab
+	 */
 	public void clickOnContacttab() {
 
 		contactTab.click();
 
 	}
 
+	/**
+	 * used for clicking on Payment Tab
+	 */
 	public void clickOnPaymentTab() {
 
 		paymentInfo.click();
 	}
 
-	public void contactInfoSalesMember(String name, String phn, String faxNo, String email, String address, String city,
-			String zip, String taxId) throws InterruptedException {
+	/**
+	 * Method for filling the contact info of Sales Member
+	 * 
+	 * @param name
+	 * @param phn
+	 * @param faxNo
+	 * @param email
+	 * @param address
+	 * @param city
+	 * @param zip
+	 * @param taxId
+	 * @throws InterruptedException
+	 */
+	public void contactInfoSalesMember(String name, String phn, String faxNo,
+			String email, String address, String city, String zip, String taxId)
+			throws InterruptedException {
 		nameTxtBox.sendKeys(name);
 		phnoneNoTxtBox.sendKeys(phn);
 		faxTxtBox.sendKeys(faxNo);
@@ -101,8 +128,22 @@ public class ContactandPaymentInfoTabPage {
 		Thread.sleep(4000);
 	}
 
-	public void paymentInfoSalesMember(String venName, String remit, String uncode, String rcCode, String accName,
-			String rNumber, String acc, String loc) throws InterruptedException {
+	/**
+	 * Used for filling payment info of Sales Member
+	 * 
+	 * @param venName
+	 * @param remit
+	 * @param uncode
+	 * @param rcCode
+	 * @param accName
+	 * @param rNumber
+	 * @param acc
+	 * @param loc
+	 * @throws InterruptedException
+	 */
+	public void paymentInfoSalesMember(String venName, String remit,
+			String uncode, String rcCode, String accName, String rNumber,
+			String acc, String loc) throws InterruptedException {
 		venderTxtBox.sendKeys(venName);
 		GenericUtils.selectDdlByIndex(glDdl, 1);
 		remittanceTxtBox.sendKeys(remit);

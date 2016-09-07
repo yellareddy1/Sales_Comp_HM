@@ -21,14 +21,27 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * this method is used to Enter userName and Password and click on Login
+	 * Button
+	 * 
+	 * @param un
+	 * @param pwd
+	 * @throws InterruptedException
+	 */
 	public void loginSuccess(String un, String pwd) {
 
 		usernameTxtBox.sendKeys(un);
+
 		passwordTxtBox.sendKeys(pwd);
+
 		submittBtn.click();
 
 	}
 
+	/**
+	 * This method is used to logout
+	 */
 	public void logoutSuccess() {
 
 		logoutTab.click();

@@ -7,6 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class RelationShipTypePage {
 	WebDriver driver;
 	@FindBy(css = "html>body>table>tbody>tr>td>table>tbody>tr>td>table>tbody>tr>td>table>tbody>tr>td>a>font>b")
@@ -35,22 +39,39 @@ public class RelationShipTypePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on Selected Agent
+	 */
 	public void clickOnCustomerNameLink() {
 		customerName.click();
 	}
 
+	/**
+	 * Method for clicking on RelationShip Tab
+	 */
 	public void clickOnRelationShipsTab() {
 		relationshipsTab.click();
 	}
 
+	/**
+	 * Method for clicking on Add Button
+	 */
 	public void clickOnAddBtn() {
 		addBtn.click();
 	}
 
+	/**
+	 * Method for clicking on Search Img
+	 */
 	public void clickOnSearchImg() {
 		searchImg.click();
 	}
 
+	/**
+	 * Method for Searching Agent
+	 * 
+	 * @param value
+	 */
 	public void searchWindow(String value) {
 		switchToWindowByIndex(1);
 		firstNameTxtBox.sendKeys(value);
@@ -59,6 +80,9 @@ public class RelationShipTypePage {
 
 	}
 
+	/**
+	 * Method for Selecting Date
+	 */
 	public void selectDate() {
 		switchToWindowByIndex(0);
 		driver.switchTo().frame("agent_main");
@@ -67,6 +91,9 @@ public class RelationShipTypePage {
 		okBtn.click();
 	}
 
+	/**
+	 * Method for clicking on Save Button
+	 */
 	public void clickonSave() {
 
 		switchToWindowByIndex(0);
@@ -74,6 +101,11 @@ public class RelationShipTypePage {
 		saveBtnf.click();
 	}
 
+	/**
+	 * Method for Switching between Windows
+	 * 
+	 * @param index
+	 */
 	private void switchToWindowByIndex(int index) {
 		int count = 0;
 		Set<String> windows = driver.getWindowHandles();

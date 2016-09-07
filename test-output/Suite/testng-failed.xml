@@ -1,27 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
-  <test name="Test(failed)" parallel="none">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.cits.regression.AddSuper_TS_03">
+      <class name="com.hm.regression.MapHierTeamVerify_TS_10">
         <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-          <include name="verifyAddSuper_TC_03"/>
-        </methods>
-      </class> <!-- com.cits.regression.AddSuper_TS_03 -->
-      <class name="com.cits.regression.AddAdmin_TS_02">
-        <methods>
+          <include name="verifyMapHierTeam_TC_10"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.cits.regression.AddAdmin_TS_02 -->
-      <class name="com.cits.regression.AddRVM_TS_01">
+      </class> <!-- com.hm.regression.MapHierTeamVerify_TS_10 -->
+      <class name="com.hm.regression.AffiliateLink_TS_03">
         <methods>
           <include name="preCondition"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.cits.regression.AddRVM_TS_01 -->
+      </class> <!-- com.hm.regression.AffiliateLink_TS_03 -->
+      <class name="com.hm.regression.AddInternalAgent_TS_16">
+        <methods>
+          <include name="addInternalAgentVerify_TC_18"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.AddInternalAgent_TS_16 -->
+      <class name="com.hm.regression.LoginSuccess_TS_01">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.LoginSuccess_TS_01 -->
+      <class name="com.hm.regression.VerifyRelationShipsTab_TS_11">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.VerifyRelationShipsTab_TS_11 -->
+      <class name="com.hm.regression.GetContactAndPaymentInfo_TS_12">
+        <methods>
+          <include name="preCondition"/>
+          <include name="getInfo_TC_12"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.GetContactAndPaymentInfo_TS_12 -->
+      <class name="com.hm.regression.MapDetailTitle_TS_08">
+        <methods>
+          <include name="preCondition"/>
+          <include name="verifymapDetilTitle_TC_07"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.MapDetailTitle_TS_08 -->
+      <class name="com.hm.regression.NewHierarchyVerify_TS_09">
+        <methods>
+          <include name="preCondition"/>
+          <include name="verifyNewHierarchy_TC_09"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.NewHierarchyVerify_TS_09 -->
+      <class name="com.hm.regression.SuperAssignDateChangeVerify_TS_13">
+        <methods>
+          <include name="preCondition"/>
+          <include name="verifySuperAssignDate_TC_13"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.SuperAssignDateChangeVerify_TS_13 -->
+      <class name="com.hm.regression.CreateTitle_TS_19">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.CreateTitle_TS_19 -->
+      <class name="com.hm.regression.HMHelpAndDataHelpVerify_TS_17">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="verifyHMHelp_TC_19"/>
+        </methods>
+      </class> <!-- com.hm.regression.HMHelpAndDataHelpVerify_TS_17 -->
+      <class name="com.hm.regression.CreateResource_TS_20">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.CreateResource_TS_20 -->
+      <class name="com.hm.regression.AddRegionAndAddCity_TS_15">
+        <methods>
+          <include name="preCondition"/>
+          <include name="addCity_TC_17"/>
+          <include name="addRegion_TC_16"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.AddRegionAndAddCity_TS_15 -->
+      <class name="com.hm.regression.CurrentHierarchy_TS_18">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.CurrentHierarchy_TS_18 -->
+      <class name="com.hm.regression.Search_TS_02">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.Search_TS_02 -->
+      <class name="com.hm.regression.AddChildTitleVerify_TS_06">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.AddChildTitleVerify_TS_06 -->
+      <class name="com.hm.regression.ABMLINKClearBtn">
+        <methods>
+          <include name="preCondition"/>
+          <include name="clearBtn"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.ABMLINKClearBtn -->
+      <class name="com.hm.regression.ResetAgent_TS_14">
+        <methods>
+          <include name="preCondition"/>
+          <include name="resetAgentByFirstName_TC_15"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.ResetAgent_TS_14 -->
+      <class name="com.hm.regression.UserTitle_TS_05">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.UserTitle_TS_05 -->
+      <class name="com.hm.regression.SearchBySalesIdVerif_TS_07">
+        <methods>
+          <include name="verifySearch_TC_06"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.SearchBySalesIdVerif_TS_07 -->
+      <class name="com.hm.regression.AddParentTitle_TS_04">
+        <methods>
+          <include name="clickOnTitleTab"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.hm.regression.AddParentTitle_TS_04 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

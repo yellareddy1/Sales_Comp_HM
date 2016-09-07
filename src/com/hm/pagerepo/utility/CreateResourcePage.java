@@ -10,6 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class CreateResourcePage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[img[@alt='Create Resource']]")
@@ -48,6 +52,9 @@ public class CreateResourcePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Used for clicking on CreateResource Tab
+	 */
 	public void clickOncreateResource() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("menu");
@@ -55,6 +62,12 @@ public class CreateResourcePage {
 		driver.switchTo().defaultContent();
 	}
 
+	/**
+	 * Method for Add new Resource
+	 * 
+	 * @param cuid
+	 * @throws InterruptedException
+	 */
 	public void addResource(String cuid) throws InterruptedException {
 		driver.switchTo().frame("utility_main");
 		driver.switchTo().frame("content");
@@ -69,6 +82,11 @@ public class CreateResourcePage {
 
 	}
 
+	/**
+	 * Method for Set Start Date of Created Resource
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void setStartDate() throws InterruptedException {
 		switchToWindowByIndex(1);
 		startDateimg.click();
@@ -80,6 +98,11 @@ public class CreateResourcePage {
 
 	}
 
+	/**
+	 * Method for Set End Date for Created Resource
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void setEndDate() throws InterruptedException {
 		switchToWindowByIndex(1);
 		endDateImg.click();
@@ -90,6 +113,11 @@ public class CreateResourcePage {
 
 	}
 
+	/**
+	 * Method for setting Channel and Org.
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void setChannelAndOrg() throws InterruptedException {
 		switchToWindowByIndex(1);
 		Thread.sleep(2000);
@@ -99,11 +127,17 @@ public class CreateResourcePage {
 		Thread.sleep(2000);
 	}
 
+	/**
+	 * Method for switching into Parent window
+	 */
 	public void closeBrowser() {
 		switchToWindowByIndex(0);
 
 	}
 
+	/**
+	 * Method for clicking on Details Img
+	 */
 	public void details() {
 
 		driver.switchTo().frame("utility_main");
@@ -111,6 +145,11 @@ public class CreateResourcePage {
 		detailsImg.click();
 	}
 
+	/**
+	 * Generic Method for Switching between Windows
+	 * 
+	 * @param index
+	 */
 	private void switchToWindowByIndex(int index) {
 		int count = 0;
 		Set<String> windows = driver.getWindowHandles();

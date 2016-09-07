@@ -45,7 +45,7 @@ public class CreateRegion_TS_21 extends TestConfigu {
 		logger.info("verifyAddNewRegion_TC_26 Ended");
 	}
 	@Test(enabled = true)
-	public void verifyRegionUpdate_TC_27()
+	public void verifyRegionUpdate_TC_27() throws InterruptedException
 	{
 		PropertyConfigurator.configure("log4j.properties");
 		LoginPage lp = new LoginPage(driver);

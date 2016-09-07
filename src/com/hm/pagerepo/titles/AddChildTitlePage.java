@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class AddChildTitlePage {
 	WebDriver driver;
 	@FindBy(name = "sub1")
@@ -33,6 +37,9 @@ public class AddChildTitlePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on ABM Link
+	 */
 	public void clickOnABMLink() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("menu");
@@ -40,6 +47,9 @@ public class AddChildTitlePage {
 
 	}
 
+	/**
+	 * Method for AddChildTitle
+	 */
 	public void addChildTitle() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("sales");

@@ -7,7 +7,6 @@ import com.hm.testconfigu.TestConfigu;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class LoginSuccess_TS_01 extends TestConfigu {
 	Logger logger = Logger.getLogger("AffiliateLink  Class");

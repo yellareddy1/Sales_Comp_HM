@@ -5,6 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class CreateTitlePage {
 	WebDriver driver;
 	@FindBy(xpath = "//a[img[@alt='Title List']]")
@@ -25,6 +29,11 @@ public class CreateTitlePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on Create Tilte Tab
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickOnCreateTitle() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("menu");
@@ -32,6 +41,11 @@ public class CreateTitlePage {
 		Thread.sleep(2000);
 	}
 
+	/**
+	 * Method for clicking on New Title Tab
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickOnNewTitle() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");
@@ -42,6 +56,11 @@ public class CreateTitlePage {
 
 	}
 
+	/**
+	 * Method for Enter new Title Info
+	 * 
+	 * @param name
+	 */
 	public void enterTheNewTitle(String name) {
 
 		driver.switchTo().frame("utility_main");
@@ -51,6 +70,11 @@ public class CreateTitlePage {
 
 	}
 
+	/**
+	 * Method for click on Title Name
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickonTitleName() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");
@@ -63,6 +87,11 @@ public class CreateTitlePage {
 		savebtn.click();
 	}
 
+	/**
+	 * Click on TitleName without Info
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickonTileNameNo() throws InterruptedException {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");

@@ -17,7 +17,7 @@ import com.hm.testconfigu.TestConfigu;
 public class WFApproval_TS_23 extends TestConfigu {
 	Logger logger = Logger.getLogger(" WFApproval  Class");
 	@Test
-	public void  verifyWFApproval_TC_29() throws FindFailed
+	public void  verifyWFApproval_TC_29() throws FindFailed, InterruptedException
 	{
 		Screen screen = new Screen();
 		Pattern img1 = new Pattern("C:\\Users\\ab63599\\Desktop\\SikuliImages\\1.PNG");

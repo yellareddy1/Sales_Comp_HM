@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class SearchBySalesIDPage {
 	WebDriver driver;
 
@@ -25,6 +29,9 @@ public class SearchBySalesIDPage {
 
 	}
 
+	/**
+	 * Method for clicking on ABMLink
+	 */
 	public void clickonABMLink() {
 		abmLink.click();
 		driver.switchTo().frame("Menu");
@@ -32,15 +39,26 @@ public class SearchBySalesIDPage {
 		driver.switchTo().frame("agent_main");
 	}
 
+	/**
+	 * Method for Entering Sales Id
+	 * 
+	 * @param sid
+	 */
 	public void enterSalesId(String sid) {
 
 		salesIdTxtBx.sendKeys(sid);
 	}
 
+	/**
+	 * Method for Clicking on Search Button
+	 */
 	public void clickonsearch() {
 		searchBtn.click();
 	}
 
+	/**
+	 * Method for clicking on Selected Agent RMG
+	 */
 	public void clickOnRMGLink() {
 		rmgConsumerLink.click();
 		GenericUtils.takeScreenshot(driver, "detailsOfSearch");

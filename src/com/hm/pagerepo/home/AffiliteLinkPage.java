@@ -15,6 +15,10 @@ public class AffiliteLinkPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * This is used for clicking on Affilite Link and Enter the Control into
+	 * Sales Id Text Box
+	 */
 	public void clickOnAffilite() {
 		affiliteLink.click();
 		driver.switchTo().frame("Menu");
@@ -22,9 +26,12 @@ public class AffiliteLinkPage {
 		driver.switchTo().frame("agent_main");
 	}
 
+	/**
+	 * This used for Simple Clicking on Affilite Link
+	 */
 	public void affilitesimpleClick() {
 		affiliteLink.click();
-	
+
 	}
 
 }

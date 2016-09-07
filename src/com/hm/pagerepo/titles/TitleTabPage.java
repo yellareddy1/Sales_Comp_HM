@@ -5,6 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class TitleTabPage {
 	WebDriver driver;
 	@FindBy(xpath = "//area[@href='f_sales_hier.htm']")
@@ -15,6 +19,9 @@ public class TitleTabPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on Title Tab
+	 */
 	public void clickonTitleTab() {
 		driver.switchTo().frame("Menu");
 

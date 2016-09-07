@@ -16,6 +16,9 @@ public class SalesTabPage {
 
 	}
 
+	/**
+	 * used for clicking on Sales Person Tab
+	 */
 	public void clickOnSalesPersonTab() {
 		driver.switchTo().frame("Menu");
 		salesPersonTab.click();

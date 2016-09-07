@@ -9,6 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hm.generic.GenericUtils;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class MapDetailTitlePage {
 	WebDriver driver;
 	@FindBy(css = "area[title='Utility']")
@@ -42,12 +46,20 @@ public class MapDetailTitlePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on Utility Tab
+	 */
 	public void clickonUtitlitytab() {
 		driver.switchTo().frame("Menu");
 		utitlityTab.click();
 
 	}
 
+	/**
+	 * Method for clicking on MapDetailTitle Tab
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void clickOnMapDetialTitleTab() throws InterruptedException {
 
 		driver.switchTo().defaultContent();
@@ -57,6 +69,11 @@ public class MapDetailTitlePage {
 		Thread.sleep(3000);
 	}
 
+	/**
+	 * Method for selecting SalesHierarchy Name
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void selectSalesHierarchyName() throws InterruptedException {
 
 		driver.switchTo().frame("utility_main");
@@ -65,18 +82,33 @@ public class MapDetailTitlePage {
 		GenericUtils.selectDdlByVisibleText(salesHierarchyNameDdl, "AFFILIATE");
 	}
 
+	/**
+	 * Method for selecting Hierarchy Items
+	 */
 	public void selectHierarchyItems() {
-		GenericUtils.selectDdlByVisibleText(hierarchyItemsDdl, "12345NEW(15039)");
+		GenericUtils.selectDdlByVisibleText(hierarchyItemsDdl,
+				"12345NEW(15039)");
 	}
 
+	/**
+	 * Method for clicking on Add Button
+	 */
 	public void clickOnAdd() {
 		addBtn.click();
 	}
 
+	/**
+	 * Method for select DetailTitle
+	 */
 	public void selectDetailedTitle() {
 
 	}
 
+	/**
+	 * Method fro Set Start Date
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void setStartDate() throws InterruptedException {
 
 		switchToWindowByIndex(1);
@@ -87,6 +119,11 @@ public class MapDetailTitlePage {
 
 	}
 
+	/**
+	 * Method for Set End Date
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void setEndDate() throws InterruptedException {
 
 		switchToWindowByIndex(1);
@@ -97,12 +134,20 @@ public class MapDetailTitlePage {
 		Thread.sleep(2000);
 	}
 
+	/**
+	 * Click on Save Button
+	 */
 	public void clickOnSaveBtn() {
 
 		switchToWindowByIndex(1);
 		saveBtn.click();
 	}
 
+	/**
+	 * Used for switching between Windows
+	 * 
+	 * @param index
+	 */
 	private void switchToWindowByIndex(int index) {
 		int count = 0;
 		Set<String> windows = driver.getWindowHandles();

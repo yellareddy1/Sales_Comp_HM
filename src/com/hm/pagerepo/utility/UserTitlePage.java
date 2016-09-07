@@ -6,6 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * @author ab63599
+ * 
+ */
 public class UserTitlePage {
 	WebDriver driver;
 	@FindBy(css = "area[title='Utility']")
@@ -26,6 +30,9 @@ public class UserTitlePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method for clicking on Utility Tab
+	 */
 	public void clickonUtitlitytab() {
 		driver.switchTo().frame("Menu");
 		utitlityTab.click();
@@ -39,6 +46,9 @@ public class UserTitlePage {
 
 	}
 
+	/**
+	 * Method to enter Cuid
+	 */
 	public void entercuid() {
 
 		cuidTxtBox.sendKeys("ab63599", Keys.ENTER);
@@ -46,6 +56,9 @@ public class UserTitlePage {
 
 	}
 
+	/**
+	 * Method for Add New Role
+	 */
 	public void clickOnAddNewRole() {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame("utility_main");
@@ -54,10 +67,16 @@ public class UserTitlePage {
 		AddUserRoleImg.click();
 	}
 
+	/**
+	 * check Admin Group
+	 */
 	public void checkAdminGroup() {
 		AdminGroupRadioBtn.click();
 	}
 
+	/**
+	 * click on Submit button
+	 */
 	public void clickonSubmit() {
 		submitBtn.click();
 	}

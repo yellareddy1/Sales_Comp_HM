@@ -3,7 +3,6 @@ package com.hm.generic;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
@@ -21,53 +20,98 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * @author ab63599
+ *
+ */
+
 public class GenericUtils {
+	
 	public WebDriver driver;
 
-	// select item from a list by index value
+	
+	/**
+	 * select item from a list by index value
+	 * @param ddl
+	 * @param index
+	 */
 	public static void selectDdlByIndex(WebElement ddl, int index) {
 		Select sct = new Select(ddl);
 		sct.selectByIndex(index);
 
 	}
 
-	// select item by value
+	 
+	/**
+	 * select item by value
+	 * @param ddl
+	 * @param value
+	 */
+	
 	public static void selectDdlByValue(WebElement ddl, String value) {
 		Select sct = new Select(ddl);
 		sct.selectByValue(value);
 	}
 
-	// select item bu visibleText
+	 
+	/**
+	 * select item by visibleText
+	 * @param ddl
+	 * @param visibleText
+	 */
 	public static void selectDdlByVisibleText(WebElement ddl, String visibleText) {
 		Select sct = new Select(ddl);
 		sct.selectByVisibleText(visibleText);
 	}
 
-	// deselect item by index
+	
+	/**
+	 *  deSelect item by index
+	 * @param ddl
+	 * @param index
+	 */
 	public static void deselectByIndex(WebElement ddl, int index) {
 		Select sct = new Select(ddl);
 		sct.deselectByIndex(index);
 	}
 
-	// deselect item by value
+	
+	/**
+	 * deSelect item by value
+	 * @param ddl
+	 * @param value
+	 */
 	public static void deselectByValue(WebElement ddl, String value) {
 		Select sct = new Select(ddl);
 		sct.deselectByValue(value);
 	}
 
-	// deselect item by VisibleText
+	
+	/**
+	 * deSelect item by VisibleText
+	 * @param ddl
+	 * @param visibleText
+	 */
 	public static void deselectByVisibleText(WebElement ddl, String visibleText) {
 		Select sct = new Select(ddl);
 		sct.deselectByVisibleText(visibleText);
 	}
 
-	// deselect all selected item
+	 
+	/**
+	 * deSelect all selected item
+	 * @param ddl
+	 */
 	public static void deselectAll(WebElement ddl) {
 		Select sct = new Select(ddl);
 		sct.deselectAll();
 	}
 
-	// Handle Alert pop-ups
+	
+	/**
+	 * Handle Alert pop-ups
+	 * @param driver
+	 */
 	public static void acceptAlert(WebDriver driver)
 
 	{
@@ -75,24 +119,43 @@ public class GenericUtils {
 		alt.accept();
 	}
 
-	// handle confirmation pop-ups
+	 
+	/**
+	 * handle confirmation pop-ups
+	 * @param driver
+	 */
 	public static void dismiss(WebDriver driver) {
 		Alert alt = driver.switchTo().alert();
 		alt.dismiss();
 	}
 
-	// handle Alert prompt popo-ups
+	// 
+	/**
+	 * handle Alert prompt pop-ups
+	 * @param driver
+	 * @param text
+	 */
 	public static void enterText(WebDriver driver, String text) {
 		Alert alt = driver.switchTo().alert();
 		alt.sendKeys(text);
 	}
 
-	// get text from Alert
+	
+	/**
+	 * get text from Alert
+	 * @param driver
+	 * @return
+	 */
 	public static String getAlertText(WebDriver driver) {
 		Alert alt = driver.switchTo().alert();
 		String data = alt.getText();
 		return data;
 	}
+	
+	/**
+	 * Switching from one Window to Other
+	 * @param index
+	 */
 	public  void switchToWindowByIndex(int index){
 		int count =0;
 		Set<String> windows = driver.getWindowHandles();
@@ -114,7 +177,15 @@ public class GenericUtils {
 		
 	
 
-	// read from a excel sheet
+	
+	/**
+	 *  read data from an excel sheet
+	 * @param filePath
+	 * @param sheetName
+	 * @param rowIndex
+	 * @param cellIndex
+	 * @return
+	 */
 	public static String getData(String filePath, String sheetName, int rowIndex, int cellIndex) {
 		String data = null;
 		try {
@@ -133,7 +204,15 @@ public class GenericUtils {
 		return data;
 	}
 
-	// write in excel sheet
+	 
+	/**
+	 * write in excel sheet
+	 * @param filepath
+	 * @param sheetName
+	 * @param rowIndex
+	 * @param cellIndex
+	 * @param data
+	 */
 	public static void setData(String filepath, String sheetName, int rowIndex, int cellIndex, String data) {
 		try {
 			File f = new File(filepath);
@@ -152,33 +231,55 @@ public class GenericUtils {
 		}
 	}
 
-	// perform left click
+	 
+	/**
+	 * perform left click
+	 * @param element
+	 */
 	public void click(WebElement element) {
 		Actions act = new Actions(driver);
 		act.click(element).perform();
 	}
 
-	// perform right click
+	 
+	/**
+	 * perform right click
+	 * @param element
+	 */
 	public void contextClick(WebElement element) {
 		Actions act = new Actions(driver);
 		act.contextClick(element).perform();
 
 	}
 
-	// method for double click
+	 
+	/**
+	 * method for double click
+	 * @param element
+	 */
 	public void doubleClick(WebElement element) {
 		Actions act = new Actions(driver);
 		act.doubleClick(element).perform();
 
 	}
 
-	// method for mouse hover
+	 
+	/**
+	 * method for mouse hover
+	 * @param element
+	 */
 	public void moveToElment(WebElement element) {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).perform();
 	}
 
-	// Method to take screenshot
+	 
+	/**
+	 * Method to take screenshot
+	 * @param driver
+	 * @param screenshotName
+	 * @return
+	 */
 	public static String takeScreenshot(WebDriver driver, String screenshotName) {
 		try {
 			TakesScreenshot ts = (TakesScreenshot) driver;
@@ -196,7 +297,14 @@ public class GenericUtils {
 
 	}
 
-	// Handling Syncronization or Ajax Object
+	
+	/**
+	 *  Handling Synchronization or Ajax Object
+	 * @param driver
+	 * @param xpath
+	 * @param time
+	 * @return
+	 */
 	public static WebElement isElementPresent(WebDriver driver, String xpath, int time) {
 		WebElement ele = null;
 		for (int i = 0; i < time; i++) {

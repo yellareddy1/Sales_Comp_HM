@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class AffiliateLink_TS_03 extends TestConfigu{
 	Logger logger = Logger.getLogger("AffiliateLink  Class");
 	@Test
-	public void affiliteLink_TC_03()
+	public void affiliteLink_TC_03() throws InterruptedException
 	{
 		PropertyConfigurator.configure("log4j.properties");
 		LoginPage lp = new LoginPage( driver);

@@ -23,10 +23,19 @@ public class NewHierarchyPage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method used for clicking on New Hierarchy Tab
+	 */
 	public void clickonNewHierarchyTab() {
 		newHierarchyTab.click();
 	}
 
+	/**
+	 * This method is used for Enter Hierarchy Information and Save
+	 * 
+	 * @param name
+	 * @param hid
+	 */
 	public void enterNewHierarchyInformation(String name, String hid)
 
 	{

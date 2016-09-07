@@ -22,8 +22,8 @@ public class HMHelpAndDataHelpVerify_TS_17 extends TestConfigu {
 		Pattern totextboximg = new Pattern(
 				"C:\\Users\\ab63599\\Desktop\\SikuliImages\\To1.PNG");
 		Pattern subTxtBoxImg = new Pattern("C:\\Users\\ab63599\\subject.PNG");
-		Pattern sendBtnImg = new Pattern(
-				"C:\\Users\\ab63599\\Desktop\\SikuliImages\\send.PNG");
+		//Pattern sendBtnImg = new Pattern(
+			//	"C:\\Users\\ab63599\\Desktop\\SikuliImages\\send.PNG");
 		LoginPage lp = new LoginPage(driver);
 		logger.info("verifyHmHelp Started");
 		String un = GenericUtils.getData("./Test data/data.xlsx", "Sheet2", 1,
@@ -53,8 +53,8 @@ public class HMHelpAndDataHelpVerify_TS_17 extends TestConfigu {
 		Pattern totextboximg1 = new Pattern(
 				"C:\\Users\\ab63599\\Desktop\\SikuliImages\\To1.PNG");
 		Pattern subTxtBoxImg1 = new Pattern("C:\\Users\\ab63599\\subject.PNG");
-		Pattern sendBtnImg1 = new Pattern(
-				"C:\\Users\\ab63599\\Desktop\\SikuliImages\\send.PNG");
+		//Pattern sendBtnImg1 = new Pattern(
+				//"C:\\Users\\ab63599\\Desktop\\SikuliImages\\send.PNG");
 		LoginPage lp = new LoginPage(driver);
 		logger.info("VerifyDataHelp Started");
 		String un = GenericUtils.getData("./Test data/data.xlsx", "Sheet2", 1,

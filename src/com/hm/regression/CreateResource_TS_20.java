@@ -52,7 +52,7 @@ public class CreateResource_TS_20 extends TestConfigu {
 	}
 
 	@Test(enabled = true)
-	public void resourceDetails_TC_25() {
+	public void resourceDetails_TC_25() throws InterruptedException {
 		PropertyConfigurator.configure("log4j.properties");
 		logger.info("resourceDetails_TC_25 started");
 		LoginPage lp = new LoginPage(driver);

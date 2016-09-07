@@ -12,7 +12,7 @@ import com.hm.testconfigu.TestConfigu;
 
 public class AddRegionAndAddCity_TS_15 extends TestConfigu {
 	Logger logger = Logger.getLogger("AddRegionAndAddCity  Class");
-	@Test(invocationCount=1)
+	@Test(enabled=true)
 	public void addRegion_TC_16() throws InterruptedException
 	{
 		PropertyConfigurator.configure("log4j.properties");
@@ -31,7 +31,7 @@ public class AddRegionAndAddCity_TS_15 extends TestConfigu {
 		AddRegionAndAddCityPage region = new AddRegionAndAddCityPage(driver);
 		region.clickOnRegionTab();
 		logger.info("Click on Region Tab");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		region.clickonHierarchyName();
 		logger.info("Click on HierarchyLink");
 		region.clickOnAddRegionTab();
@@ -42,7 +42,7 @@ public class AddRegionAndAddCity_TS_15 extends TestConfigu {
 		
 		
 	}
-	@Test(invocationCount=1)
+	@Test(enabled=true)
 	public void addCity_TC_17() throws InterruptedException
 	{
 		PropertyConfigurator.configure("log4j.properties");

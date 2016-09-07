@@ -14,7 +14,7 @@ public class AgentHistory_TS_22 extends TestConfigu {
 	
 	Logger logger = Logger.getLogger("AgentHistory  Class");
 	@Test(invocationCount=4)
-	public void VerifyAgentHistoryTab_TC_28()
+	public void VerifyAgentHistoryTab_TC_28() throws InterruptedException
 	{
 		PropertyConfigurator.configure("log4j.properties");
 
